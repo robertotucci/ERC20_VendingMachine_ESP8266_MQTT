@@ -8,8 +8,6 @@
 #define MAX_WIFI_INIT_RETRY 10
 #define WIFI_RETRY_DELAY 500
 
-#define ESP_SUB_ROLE
-
 WiFiClient wifi_client;
 PubSubClient mqtt_client(wifi_client, MQTT_SERVER, MQTT_BROKER_PORT);
 bool mqtt_status;
